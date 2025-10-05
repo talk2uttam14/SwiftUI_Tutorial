@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    let items = ["WeSplit", "GuessTheFlag", "BetterRest", "WordScramble", "Animations", "iExpense", "Moonshot"]
+    let items = ["WeSplit", "GuessTheFlag", "BetterRest", "WordScramble", "Animations", "iExpense", "Moonshot", "Navigation", "DataFetching", "FormNextDisable", "Haptics", "CupCakeCorner"]
     
     // MARK: - Destination resolver
     @ViewBuilder
@@ -27,6 +27,16 @@ struct HomeView: View {
             iExpense()
         case "Moonshot":
             Moonshot()
+        case "Navigation":
+            NavitionViewStore()
+        case "DataFetching":
+            DataFetching()
+        case "FormNextDisable":
+            FormNextDisable()
+        case "Haptics":
+            Haptics()
+        case "CupCakeCorner":
+            CupCakeCorner()
         default:
             Text("Coming Soon 🚀")
         }
